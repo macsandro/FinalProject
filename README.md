@@ -1,1 +1,1 @@
-# Dumpster App by Sandro Santos
+# Dumpster Rentals App by Sandro Santos
