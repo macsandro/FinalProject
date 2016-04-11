@@ -1,1 +1,14 @@
-<h1>This is the Home Page!</h1>
+
+  <div>   
+     <%  if user_signed_in? %>
+          do something... 
+     <% else %>
+ 	<div class="jumbotron center">
+     <center><h1>Welcome to [Company Name here]</h1></center>
+       <center><p>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p></center>
+  	<% end %>  
+	</div>
+</div>
