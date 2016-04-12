@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'nested_scaffold'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
