@@ -1,10 +1,10 @@
 
   <div>   
      <%  if user_signed_in? %>
-          do something... 
+          <h1>Home Page</h1> 
      <% else %>
  	<div class="jumbotron center">
-     <center><h2>Welcome to Dumpsters!</h2></center>
+     <center><h2>Welcome to Company Name</h2></center>
        <center><p>
          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
