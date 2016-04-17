@@ -1,6 +1,5 @@
 Rails.application.routes.draw do  
   resources :customers do
-    resources :projects
   end
   devise_for :users
   root "pages#home"
