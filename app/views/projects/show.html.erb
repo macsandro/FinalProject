@@ -1,13 +1,14 @@
 <%- model_class = Project -%>
 <div class="page-header">
-  <h2><%=t '.title', default: model_class.model_name.human.titleize %></h2>
+  <!-- <h2><%=t '.title', default: model_class.model_name.human.titleize %></h2> -->
+   <h3>Project for <%= link_to @customer.name, customer_projects_path(@customer,@project)%></h3>
 </div>
 
 <div class="fieldset">
   <dl>
       <dt class="label label-default"><%= model_class.human_attribute_name(:customer_id) %></dt>
-      <dd><pre class="prettyprint"><%= @project.customer_id %></pre></dd>
-      <dt class="label label-default"><%= model_class.human_attribute_name(:name) %></dt>
+      <!-- <dd><pre class="prettyprint"><%= @project.customer_id %></pre></dd>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:name) %></dt> -->
       <dd><pre class="prettyprint"><%= @project.name %></pre></dd>
       <dt class="label label-default"><%= model_class.human_attribute_name(:address) %></dt>
       <dd><pre class="prettyprint"><%= @project.address %></pre></dd>

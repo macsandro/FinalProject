@@ -1,6 +1,10 @@
 <%- model_class = Project -%>
 <div class="page-header">
-  <h2><%=t '.title', default: model_class.model_name.human.pluralize.titleize %></h2>
+ <!--  <h2><%=t '.title', default: model_class.model_name.human.pluralize.titleize %></h2> -->
+  
+  <h3>Projects for <%= @customer.name%></h3>
+ 
+  
 
 </div>
 <table class="table table-striped">

@@ -1,6 +1,7 @@
 <%- model_class = Project -%>
 <div class="page-header">
-  <h2><%=t '.title', default: [:'helpers.titles.edit', 'Edit %{model}'], model: model_class.model_name.human.titleize %></h2>
+  <h3><%= link_to @customer.name, customer_projects_path(@customer,@project)%></h3>
 
 </div>
+
 <%= render partial: 'form' %>
