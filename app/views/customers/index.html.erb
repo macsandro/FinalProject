@@ -41,9 +41,17 @@
           <%- end -%>
 
            <%= link_to customer_projects_path(customer), class: 'btn btn-xs', title: "#{ t('.show', default: t('helpers.links.show')) }" do %>
-            <strong><%= pluralize(customer.projects.size, "project") %></strong>
-          <%- end -%>
 
+           <% if customer.projects.size == 0 %>
+
+             add project
+
+             <% else %>
+
+              <strong><%= pluralize(customer.projects.size, "project") %></strong>
+
+          <%- end -%>
+          <%- end -%>
          
         </td>
       </tr>
